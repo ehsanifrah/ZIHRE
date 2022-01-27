@@ -1,0 +1,166 @@
+/* booking form */
+
+.offcanvas-end{
+    background-color: rgb(73, 10, 61 ,0.7);
+    overflow: scroll;
+    width: 75%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .offcanvas-end{
+    background-color: rgb(73, 10, 61 ,0.7);
+    overflow: scroll;
+    width: 100%;
+}
+}
+
+.bottom-border{
+    border-bottom: 2px solid #C48313 ;
+}
+
+#back{
+  padding: 15px;
+}
+#back svg{
+  color: #fbfbfb;
+  width: 50px;
+  height: 50px;
+}
+
+
+/* calendar */
+
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+
+/* month */
+.month {
+  padding: 20px 25px;
+  width: 100%;
+  background: rgb(196, 131, 19,0.8);
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: #fbfbfb;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 0px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 0px;
+}
+
+/* weekdays */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #C48313;
+  text-transform: uppercase;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #fbfbfb;
+  text-align: center;
+}
+
+.days {
+  padding: 20px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size:14px;
+  color: #888787;
+}
+
+.days li .active {
+  border-radius: 100px;
+  padding: 10px;
+  background: #C48313;
+  color: #fbfbfb !important
+}
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 380px) {
+  .weekdays li, .days li {width: 12.2%; padding-left: 5px;}
+  /* .weekdays{
+    padding-left: 7px;
+  } */
+  .weekdays li{
+    font-size: 14px;
+  }
+}
+
+
+/* end of calendar */
+
+
+
+/* radio buttons */
+input[type="radio"]{
+  -webkit-appearance: none;
+}
+
+.fm label{
+  height: 120px;
+  width: 140px;
+  padding: 5px;
+  border: 5px solid rgb(196, 131, 19);
+  position: relative;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.icon{
+  height: 100px;
+  position: absolute;
+  left: 50%;
+  top:70%;
+  transform: translate(-50%, -80%);
+}
+
+input[type="radio"]:checked + label {
+  background-color:#fbfbfb;
+  box-shadow: 0 1px 10px 5px rgb(159, 99, 0, 0.4);
+  border: 2px solid rgb(196, 131, 19);
+}
+
+
+#money-detail{
+  display: none;
+}
+
+#remain input[type="radio"]:checked + label{
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}

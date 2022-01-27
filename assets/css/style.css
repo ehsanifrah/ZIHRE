@@ -1,0 +1,93 @@
+
+/* font family */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,400&display=swap');
+
+
+.roboto{
+  font-family: 'Roboto', sans-serif;
+  color: #FBFBFB;
+
+}
+
+.raleway{
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 0.2rem;
+  color: #FBFBFB;
+}
+
+
+/* body */
+
+.bg{
+    background-color: #260820;
+}
+
+/* text-color */
+.bg-p{
+  color: #490A3D;
+  fill: #490A3D;
+}
+
+.bg-m{
+  color: #C48313;
+  fill: #C48313;
+}
+
+.bg-w{
+  color: #FBFBFB;
+
+}
+
+
+/* heading  */
+.mustard-box{
+  width: 78px;
+  height: 93px;
+  border: 5px solid #C48313;
+  margin-left: -150px;
+  
+  
+}
+
+.mustard-box h5{
+  width:200px;
+  top:15px;
+  left:25px;
+}
+
+
+#conntact-us .mustard-box h5{
+  width:260px;
+}
+
+@media only screen and (max-width: 1440px) {
+  
+  #conntact-us .mustard-box h5{
+    width:260px;
+  }
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+  
+  .mustard-box{
+    margin-left: -150px;
+  }
+  
+  .mustard-box h5{
+    width:200px;
+    top:15px;
+    left:25px;
+  }
+
+  #conntact-us .mustard-box h5{
+    width:220px;
+  }
+
+}
+
+

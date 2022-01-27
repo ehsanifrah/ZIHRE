@@ -1,0 +1,73 @@
+
+/* events */
+
+/* button */
+.event-button {
+    letter-spacing: 0.1rem;
+    border: 2px solid #C48313;
+    color: #C48313;
+    font-weight: 500;
+    transition: all ease-in-out 300ms;
+}
+  
+.event-button:hover {
+    background: #C48313;
+    color: #1C1B1C;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.5);
+}
+
+.event-border{
+    border-bottom: 5px solid #C48313;
+    width: 340px;
+    height: 335px;
+}
+
+.event-border1{
+    border-left: 5px solid #C48313;
+    width: 340px;
+    height: 335px;
+}
+
+.event-border2{
+    border-top: 5px solid #C48313;
+    width: 340px;
+    height: 335px;
+}
+
+
+.event-image{
+    width: 330px;
+    height: 330px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 1px 10px 5px rgb(159, 99, 0, 0.4);
+}
+
+@media only screen and (max-width: 400px) {
+ 
+    .event-image{
+        width: 230px;
+        height: 230px;
+    }
+
+    .event-border{
+        border-bottom: 5px solid #C48313;
+        width: 240px;
+        height: 235px;
+    }
+    
+    .event-border1{
+        border-left: 5px solid #C48313;
+        width: 240px;
+        height: 235px;
+    }
+    
+    .event-border2{
+        border-top: 5px solid #C48313;
+        width: 240px;
+        height: 235px;
+    }
+    
+
+  }

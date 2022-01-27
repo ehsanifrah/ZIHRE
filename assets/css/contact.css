@@ -1,0 +1,38 @@
+/* contact */
+.contact-image{
+        background:
+          url("../images/img.svg")
+          no-repeat;
+        background-position: right;
+        background-size:contain;
+        backdrop-filter: blure(10px);
+      }
+
+
+.bg-translucent {
+    background: #3A0C31;
+    box-shadow: 0 3px 15px 3px rgb(146, 27, 124, 62%);
+  }
+  
+  .max-width-600 {
+    max-width: 600px;
+  }
+
+  .max-width-600 button{
+      background-color: #490A3D;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    .contact-image{
+        background:
+          url("")
+          no-repeat;
+      }
+
+      
+  }
+
+  #conntact-us button:hover{
+    color: #fbfbfb;
+  }

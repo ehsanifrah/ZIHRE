@@ -1,0 +1,92 @@
+/* book now */
+
+#booknow{
+    background: rgb(84,0,68);
+    background: linear-gradient(180deg, rgba(84,0,68,1) 0%, rgba(15,2,12,1) 100%);
+    height: 350px;
+}
+
+/* watermark */
+.watermark{
+    width: 100%;
+    position: relative;
+}
+.z-1{
+    z-index: 1;
+}
+.watermark{
+    /* content: "BOOK NOW"; */
+    font-size: 200px;
+    font-weight: bold;
+    color: rgb(251, 251, 251, 0.03);
+    letter-spacing: 0.4rem;
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    right: 0;
+    bottom: 0;
+
+}
+
+/* button */
+.book-button {
+    letter-spacing: 0.1rem;
+    border: 2px solid #fbfbfb;
+    color: #fbfbfb;
+    font-weight: 500;
+    transition: all ease-in-out 300ms;
+}
+  
+.book-button:hover {
+    background: #fbfbfb;
+    color: #1C1B1C;
+    transform: scale(1.1);
+    box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 1400px) {
+    .watermark::before{
+        content: "BOOK NOW";
+        font-size: 180px;
+        font-weight: bold;
+        color: rgb(251, 251, 251, 0.03);
+        letter-spacing: 0.4rem;
+        position: absolute;
+        left: 0px;
+        top: -100px;
+        right: 0;
+        bottom: 0;
+    
+    }
+  }
+
+  @media only screen and (max-width: 1200px) {
+    #booknow{
+        background: rgb(84,0,68);
+        background: linear-gradient(180deg, rgba(84,0,68,1) 0%, rgba(15,2,12,1) 100%);
+        height: 300px;
+    }
+
+    .watermark::before{
+        content: "BOOK NOW";
+        font-size: 140px;
+        font-weight: bold;
+        color: rgb(251, 251, 251, 0.03);
+        letter-spacing: 0.4rem;
+        position: absolute;
+        left: 0px;
+        top: -70px;
+        right: 0;
+        bottom: 0;
+    
+    }
+  }
+
+  @media only screen and (max-width: 980px) {
+    
+    .watermark::before{
+        content: " ";
+        
+    }
+  }
